@@ -110,12 +110,9 @@ window.houseFilter = function(type, price, room, guest) {
         }).filter(function(featureElem) {
             for(let i = 0; i < 6; i++) {
                 if (featuresV[i].checked) {
-                        try{
                             for(let j = 0; j < featureElem.offer.features.length; j++) {
                                 return featureElem.offer.features[j] === featuresV[i].value;
                             }
-                        }
-                        catch{}
                 } else {
                     return featureElem;
                 }
