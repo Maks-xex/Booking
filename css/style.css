@@ -605,7 +605,12 @@ textarea:focus {
 .notice__form .drop-zone:hover {
   color: #ff5635;
 }
-
+.notice__form input:disabled ~ .drop-zone:hover {
+  color: #999 !important;
+}
+.form__reset:disabled {
+  cursor: default;
+}
 .form__photo-container {
   width: 140px;
 }
